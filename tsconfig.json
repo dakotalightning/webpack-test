@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "preserve",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "typeRoots" : ["node_modules/@types", "./@types"],
+    "types": ["webpack-env"],
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@app": [ "./app" ],
+      "@app/*": [ "./app/*" ],
+      "@components": [ "./app/components" ],
+    }
+  },
+  "exclude": ["node_modules", ".cache", ".vscode"],
+  "include": ["./app/**/*", "./@types/**/*"]
+}
